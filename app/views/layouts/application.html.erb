@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blp</title>
-  <%= stylesheet_link_tag    "application" %>
+	<meta http_equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Benjamin Lang</title>
+  <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div id="body_wrap">
+		<div id="logo_container">
+			<%= link_to root_path, {:id => 'logo'} do %>
+			<span class="black_bkg green_text" id="logo_text">benjamin<span class="white_text">lang</span>photography</span>
+			<% end %>
+		</div>
+		<%= yield %>
 
 </body>
 </html>
