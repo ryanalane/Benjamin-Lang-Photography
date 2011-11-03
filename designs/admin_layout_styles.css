@@ -1,0 +1,21 @@
+/* Begin text layout styles */
+
+.new_project_link {
+	font-size: 0.9em;
+	margin: -0.75em 0 1em 0;
+	padding: 0.25em;
+}
+
+.empty_project {
+	font-style: italic;
+}
+
+.hidden_project {
+	text-decoration: line-through;
+}
+
+#new_project_input {
+	padding-left: 3em;
+}
+
+/* End text layout styles */

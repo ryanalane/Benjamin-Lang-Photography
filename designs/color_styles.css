@@ -1,0 +1,72 @@
+body {
+color: #10222B;
+background: #F6FFE0;
+}
+
+/* Begin DIV styles */
+
+#logo_container, .prev_next_a {
+	color: inherit;
+	background: inherit;
+}
+
+.nav_container {
+	color: #10222B;
+	background: inherit;
+}
+
+#top_nav_container, #side_nav_container {
+	border-color: #95AB63;
+}
+
+.photo_container, .thumb_container {
+	color: inherit;
+	background: #10222B;
+}
+.thumb_container:hover {
+	color: inherit;
+	background: #95AB63;
+}
+
+/* End DIV styles */
+
+/* Begin text color styles */
+
+.white_text {
+	color: #E2F0D6;
+}
+
+.green_text {
+	color: #95AB63;
+}
+
+.black_text {
+	color: #10222B;
+}
+
+.black_bkg {
+	background: #10222B;
+}
+
+.green_bkg {
+	background: #95AB63;
+}
+
+/* prev_next_a -> div#logo_container */
+
+/* End text color styles */
+
+/* Begin A styles */
+
+a {
+	color: inherit;
+	background: inherit;
+}
+
+a.selected_a {
+	font-weight: bold;
+}
+
+/* a.prev_next_a:hover, a.nav_a:hover -> .black_bkg */
+
+/* End A styles */
