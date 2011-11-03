@@ -6,7 +6,7 @@ ryan@ryanalane.com
 @ryan_a_lane
 about.me/ryanalane
 
-This README was published October 13th, 2011.
+This README was published November 3rd, 2011.
 
 Rails Version: 3.1.1
 Dependencies: SASS-Rails, CoffeeSCript, Uglifier, Jquery-Rails, Capybara
@@ -16,4 +16,4 @@ Benjamin Lang Photography is a simple rails app for managing a photography portf
 This project also serves as a sandbox for getting familiar with Rails development, associated technologies (CoffeeScript, SASS, etc.), and building a project to production.
 
 A static version of the site may be viewed at:
-ryanalane.com/blp/static
+benjaminlangphotography.com
