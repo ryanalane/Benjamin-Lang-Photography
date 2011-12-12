@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: proj type 1
+  display_order: 0
+  url_name: proj-type-1
+
+two:
+  name: proj type 2
+  display_order: 1
+  url_name: proj-type-2

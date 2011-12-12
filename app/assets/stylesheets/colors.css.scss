@@ -1,0 +1,77 @@
+$black: #10222B;
+$white: #E2F0D6;
+$background_green: #F6FFE0;
+$border_green: #95AB63;
+
+body {
+	color: $black;
+	background: $background_green;
+}
+
+/* Begin DIV styles */
+
+#logo_container, .prev_next_a {
+	color: inherit;
+	background: inherit;
+}
+
+.nav_container {
+	color: $black;
+	background: inherit;
+}
+
+#top_nav_container, #side_nav_container {
+	border-color: $border_green;
+}
+
+.photo_container, .thumb_container {
+	color: inherit;
+	background: $black;
+}
+.thumb_container:hover {
+	color: inherit;
+	background: $border_green;
+}
+
+/* End DIV styles */
+
+/* Begin text color styles */
+
+.white_text {
+	color: $white;
+}
+
+.green_text {
+	color: $border_green;
+}
+
+.black_text {
+	color: $black;
+}
+
+.black_bkg {
+	background: $black;
+}
+
+.green_bkg {
+	background: $border_green;
+}
+
+/* prev_next_a -> div#logo_container */
+
+/* End text color styles */
+
+/* Begin A styles */
+
+a {
+	color: inherit;
+	background: inherit;
+}
+
+a.selected_a {
+	font-weight: bold;
+}
+
+/* a.prev_next_a:hover, a.nav_a:hover -> .black_bkg */
+
+/* End A styles */

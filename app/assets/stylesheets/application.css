@@ -3,5 +3,176 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
+ *= require_tree .
 */
+
+body {
+	font-family: Verdana;
+}
+
+/* Reset Styles */
+p {
+	padding: 0;
+	margin: 0;
+}
+
+/* Basic Display Styles */
+
+.hidden {
+	visibility: hidden;
+}
+
+/* Begin DIV styles */
+
+#body_wrap {
+	display: table;
+}
+
+#logo_container {
+	font: 1.5em Helvetica;
+	letter-spacing: 0.25em;
+}
+
+#logo_text {
+	padding: .5em;
+}
+
+.nav_container {
+	background-color: inherit;
+	font-family: Hei;
+	vertical-align: top;
+}
+
+#content_wrap {
+	display: table;
+	margin-left: .5em;
+	height: 25.375em;
+}
+
+#top_nav_container {
+	margin: 2em 0 0 .5em;
+	border-bottom: thin solid;
+	padding: 0 0 .25em;
+	min-width: 39.75em;
+}
+
+#side_nav_container {
+	display: table-cell;
+	border-left: thin solid;
+	padding: 1em 0 0 .5em;
+	min-width: 4em;
+}
+
+#main_content_container {
+	font-size: .90em;
+	letter-spacing: .1em;
+	display: table-cell;
+	padding: 1.25em 1.25em 0 0;
+	vertical-align: top;
+	width: 528px;
+}
+
+.photo_container {
+	padding: 1em 1em .5em 1em;
+	font-family: Hei;
+	font-size: 1em;
+}
+
+.thumb_container {
+	float: left;
+	padding: 0.5em;
+	width: 152px;
+	height: 113px;
+	margin: 0 0.5em;
+	margin-bottom: 1em;
+}
+
+.first_thumb {
+	margin-left: 0;
+}
+.last_thumb {
+	margin-right: 0;
+}
+
+
+#photo_numbers_div, .photo_container {
+	text-align: center;
+}
+#photo_numbers_div {
+	margin-top: .5em;
+	display: table;
+}
+
+
+/* End DIV styles */
+
+/* Begin A styles */
+
+a {
+	text-decoration: none;
+}
+
+#top_nav_container > a.nav_a {
+	margin-right: 2em;
+}
+
+.prev_nav_a {
+	width: 214px;
+}
+
+a.prev_next_a:hover, a.nav_a:hover {
+	text-decoration: underline;
+}
+
+/* End A styles */
+
+/* Begin IMG styles */
+
+img.photo {
+	margin-bottom: .5em;
+}
+
+/* End IMG styles */
+
+/* Begin Side Nav List Styles */
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+#side_nav_list > li {
+	padding: 0 0 .5em 0;
+}
+
+#top_nav_list > li {
+	display: inline-block;
+	margin-right: 3em;
+}
+
+/* End Side Nav List Styles */
+
+/* Begin Text Styles */
+
+.photo_numbers {
+	font-weight: bold;
+}
+.prev_next {
+	width: 164px;
+}
+#photo_numbers_wrap {
+	width: 100px;
+}
+#photo_numbers_wrap, .prev_next {
+	display: table-cell;
+	text-align: center;
+}
+#prev {
+	padding-left: 50px;
+}
+#next {
+	padding-right: 50px;
+}
+
+/* End Text Styles */
