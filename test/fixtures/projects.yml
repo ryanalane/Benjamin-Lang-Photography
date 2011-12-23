@@ -1,4 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+ # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
   project_type: one
@@ -17,3 +17,9 @@ three:
   name: project three
   display_order: 2
   url_name: proj-three
+  
+four:
+  project_type: two
+  name: project four
+  display_order: 2
+  url_name: proj-four

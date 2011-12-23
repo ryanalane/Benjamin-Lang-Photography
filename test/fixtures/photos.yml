@@ -16,21 +16,21 @@ two:
   
 three:
   project: two
-  name: Photo Three
+  name:
   img_url: photo_three.jpg
   thumb_url: photo_three_thumb.jpg
   display_order: 1
   
 four:
   project: two
-  name: Photo Four
+  name:
   img_url: photo_four.jpg
   thumb_url: photo_four_thumb.jpg
   display_order: 2
   
 five:
   project: two
-  name: Photo Five
+  name:
   img_url: photo_five.jpg
   thumb_url: photo_five_thumb.jpg
   display_order: 3
@@ -48,3 +48,10 @@ seven:
   img_url: photo_seven.jpg
   thumb_url: photo_seven_thumb.jpg
   display_order: 2
+  
+eight:
+  project: four
+  name: Photo Eight
+  img_url: photo_eight.jpg
+  thumb_url: photo_eight_thumb.jpg
+  display_order: 1

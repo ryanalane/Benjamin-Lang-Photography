@@ -1,6 +1,30 @@
 <div id="main_content_container">
-<div class="photo_container">
-<%= image_tag @photo.img_url, :class => "photo", :alt => @project.name + ": " + @photo.display_order.to_s, :width => "500" %>
-</div>
+	<div id="photo_numbers_div">
+			<span id="prev" class="prev_next">
+				<% if @photo.display_order > 1 %>
+					<%= link_to 'prev', (@photo.display_order - 1).to_s, :class => 'prev_next_a' %>
+				<% end %>
+			</span>
+			<span id="photo_numbers_wrap">
+			<span id="current_photo_number" class="photo_numbers">
+				<%= @photo.display_order %>
+			</span> of <span id="total_photo_number" class="photo_numbers">
+				<%= @project.photos.length %>
+			</span>
+			</span>
+			<span id="next" class="prev_next">
+			<% if @photo.display_order < @project.photos.length %>
+				<%= link_to 'next', (@photo.display_order + 1).to_s, :class => 'prev_next_a' %>
+			<% end %>
+			</span>
+	</div>
+	<div class="photo_container">
+		<%= image_tag @photo.img_url, :class => "photo", :alt => @project.name + ": " + @photo.display_order.to_s, :width => "500" %>
+		<% if @photo.name %>
+		<p id="photo_title" class="white_text">
+			<%= @photo.name %>
+		</p>
+		<% end %>
+	</div>
 </div>
 <%= render :partial => 'shared/side_nav', :locals => { :projs => @projects, :current_proj_id => @project.id } %>

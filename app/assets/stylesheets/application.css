@@ -39,7 +39,6 @@ p {
 
 .nav_container {
 	background-color: inherit;
-	font-family: Hei;
 	vertical-align: top;
 }
 
@@ -67,7 +66,7 @@ p {
 	font-size: .90em;
 	letter-spacing: .1em;
 	display: table-cell;
-	padding: 1.25em 1.25em 0 0;
+	padding: 1em 1.25em 0 0;
 	vertical-align: top;
 	width: 528px;
 }
@@ -99,7 +98,7 @@ p {
 	text-align: center;
 }
 #photo_numbers_div {
-	margin-top: .5em;
+	margin-bottom: .5em;
 	display: table;
 }
 

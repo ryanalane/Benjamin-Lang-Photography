@@ -1,6 +1,6 @@
 <div id="side_nav_container" class="nav_container">
 	<ul id="side_nav_list">
-		<% projs.each do |project| %>
+		<% projs.order('display_order').each do |project| %>
 			<% a_class = project.id.equal?(current_proj_id) ? 'nav_a selected_a' : 'nav_a' %>
 			<li>
 				<%= link_to project.name, '/'+ project.project_type.url_name + '/' + project.url_name, :class => a_class, :title => project.name %>
