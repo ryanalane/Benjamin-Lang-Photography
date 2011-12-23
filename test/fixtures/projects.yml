@@ -3,13 +3,13 @@
 one:
   project_type: one
   name: proj 1
-  display_order: 0
+  display_order: 1
   url_name: proj-one
 
 two:
   project_type: two
   name: proj 2
-  display_order: 2
+  display_order: 1
   url_name: proj-two
   
 three:
