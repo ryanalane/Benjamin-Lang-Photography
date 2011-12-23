@@ -1,13 +1,50 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  img_url: MyString
-  thumb_url: MyString
+  project: one
+  name: Photo One
+  img_url: photo_one.jpg
+  thumb_url: photo_one_thumb.jpg
   display_order: 1
 
 two:
-  name: MyString
-  img_url: MyString
-  thumb_url: MyString
+  project: one
+  name: Photo Two
+  img_url: photo_two.jpg
+  thumb_url: photo_two_thumb.jpg
+  display_order: 2
+  
+three:
+  project: two
+  name: Photo Three
+  img_url: photo_three.jpg
+  thumb_url: photo_three_thumb.jpg
   display_order: 1
+  
+four:
+  project: two
+  name: Photo Four
+  img_url: photo_four.jpg
+  thumb_url: photo_four_thumb.jpg
+  display_order: 2
+  
+five:
+  project: two
+  name: Photo Five
+  img_url: photo_five.jpg
+  thumb_url: photo_five_thumb.jpg
+  display_order: 3
+  
+six:
+  project: three
+  name: Photo Six
+  img_url: photo_six.jpg
+  thumb_url: photo_six_thumb.jpg
+  display_order: 1
+  
+seven:
+  project: three
+  name: Photo Seven
+  img_url: photo_seven.jpg
+  thumb_url: photo_seven_thumb.jpg
+  display_order: 2

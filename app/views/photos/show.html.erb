@@ -1,3 +1,6 @@
 <div id="main_content_container">
+<div class="photo_container">
+<%= image_tag @photo.img_url, :class => "photo", :alt => @project.name + ": " + @photo.display_order.to_s, :width => "500" %>
+</div>
 </div>
 <%= render :partial => 'shared/side_nav', :locals => { :projs => @projects, :current_proj_id => @project.id } %>

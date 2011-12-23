@@ -12,6 +12,6 @@ Blp::Application.routes.draw do
   
  match '/:proj_type_url_name' => 'project_types#show'
  match '/:proj_type_url_name/:project_url_name' => 'projects#show'
- match '/:proj_type_url_name/:project_url_name/:photo_url_number/' => 'photos#show'
+ match '/:proj_type_url_name/:project_url_name/:photo_display_order/' => 'photos#show'
   
 end
