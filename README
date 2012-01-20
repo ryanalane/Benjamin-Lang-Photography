@@ -8,7 +8,7 @@ about.me/ryanalane
 
 This README was published November 3rd, 2011.
 
-Rails Version: 3.1.1
+Rails Version: 3.2.0
 Dependencies: SASS-Rails, CoffeeSCript, Uglifier, Jquery-Rails, Capybara
 
 Benjamin Lang Photography is a simple rails app for managing a photography portfolio. It is currently being developed for a photographer friend of mine (Ben Lang), but the eventual goal is to generalize it as a light-weight portfolio CMS.
