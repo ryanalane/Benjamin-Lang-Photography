@@ -16,6 +16,7 @@ test:
   pool: 5
   username: blp
   host: localhost
+  min_messages: WARNING
 
 production:
   adapter: postgresql

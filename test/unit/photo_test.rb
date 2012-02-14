@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PhotoTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  
+  should have_attached_file(:image)
+  
 end

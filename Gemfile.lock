@@ -41,6 +41,7 @@ GEM
       xpath (~> 0.1.4)
     childprocess (0.3.0)
       ffi (~> 1.0.6)
+    cocaine (0.2.1)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -69,6 +70,11 @@ GEM
     minitest (2.11.0)
     multi_json (1.0.4)
     nokogiri (1.5.0)
+    paperclip (2.6.0)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+      mime-types
     pg (0.12.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -107,6 +113,7 @@ GEM
       ffi (~> 1.0.9)
       multi_json (~> 1.0.4)
       rubyzip
+    shoulda (2.11.3)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -134,8 +141,10 @@ DEPENDENCIES
   jquery-rails
   launchy
   minitest
+  paperclip (~> 2.0)
   pg
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
+  shoulda
   turn
   uglifier (>= 1.0.3)
