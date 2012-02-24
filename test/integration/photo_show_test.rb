@@ -13,7 +13,7 @@ class PhotoShowTest < ActionDispatch::IntegrationTest
   	assert page.has_selector?('div.photo_container img.photo')
   	
   end
-  
+
   test "Image tag should point to the correct image url" do
  		proj_type = ProjectType.find(:all).first
  		project = proj_type.projects.first
@@ -21,9 +21,9 @@ class PhotoShowTest < ActionDispatch::IntegrationTest
   	visit '/' + proj_type.url_name + '/' + project.url_name
   
   	# Asserts that the image tag's 'src' attribute points to the correct url
-  	assert page.has_selector?('div.photo_container img.photo', :src => photo.img_url)
+  	assert page.has_selector?(:xpath, '//div[@class="photo_container"]/img[@class="photo" and @src="' + photo.image.url(:medium) + '"]')
   end
-  
+    
   test "Image tag should have an appropriate alt tag" do
  		proj_type = ProjectType.find(:all).first
   	project = proj_type.projects.first
@@ -31,7 +31,7 @@ class PhotoShowTest < ActionDispatch::IntegrationTest
   	visit '/' + proj_type.url_name + '/' + project.url_name
   
   	# Asserts that the image tag's "alt" is of the form: "ProjectName: PhotoNumber"
-  	assert page.has_selector?('div.photo_container img.photo', :alt => project.name + ": " + photo.display_order.to_s)
+  	assert page.has_selector?(:xpath, '//div[@class="photo_container"]/img[@class="photo" and @alt="' + project.name + ': ' + photo.display_order.to_s + '"]')
   end
   
   ### Begin previous/next photo integration tests

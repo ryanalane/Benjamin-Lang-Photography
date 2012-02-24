@@ -19,7 +19,7 @@
 			</span>
 	</div>
 	<div class="photo_container">
-		<%= image_tag @photo.img_url, :class => "photo", :alt => @project.name + ": " + @photo.display_order.to_s, :width => "500" %>
+		<%= image_tag @photo.image.url(:medium), :class => "photo", :alt => @project.name + ": " + @photo.display_order.to_s, :width => "500" %>
 		<% if @photo.name %>
 		<p id="photo_title" class="white_text">
 			<%= @photo.name %>
