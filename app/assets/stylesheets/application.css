@@ -120,7 +120,7 @@ a {
 }
 
 a.prev_next_a:hover, a.nav_a:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid black;
 }
 
 /* End A styles */
