@@ -1,7 +1,18 @@
 /* Begin text layout styles */
 
-.new_project_link {
-	font-size: 0.9em;
+.new_a {
+	font-size: 0.93em;
+}
+
+#new_project_a_li {
+	margin: 0 0 0.5em 0;
+}
+
+#new_project_a {
+	padding: 0.25em;
+}
+
+#new_project_type_a {
 	margin: -0.75em 0 1em 0;
 	padding: 0.25em;
 }

@@ -8,9 +8,10 @@
 <link rel="stylesheet" href="admin_color_styles.css">
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery_img_pre_load.js"></script>
+<script type="text/javascript" src="general_dom.js"></script>
 <script type="text/javascript" src="pre_load_admin_imgs.js"></script>
 <script type="text/javascript" src="add_project.js"></script>
-<script type="text/javascript" src="event_bindings.js"></script>
+<script type="text/javascript" src="display_events.js"></script>
 </head>
 <body>
 	<div id="body_wrap">
@@ -31,8 +32,13 @@
 				<li>
 					<a href="#" class="nav_a">about</a>
 				</li>
+				<li>
+					<a href="#" id="new_project_type_a" class="new_a black_text">+ add a project type</a>
+				</li>
 			</ul>
 		</div>
+		
+		
 		<div id="content_wrap">
 			<div id="main_content_container">
 				<div class="photo_container">
@@ -49,9 +55,13 @@
 					<span id="next" class="prev_next"><a href="#" class="prev_next_a">next</a></span>
 				</div>
 			</div>
+			
+			
 			<div id="side_nav_container" class="nav_container">
 				<ul id="side_nav_list">
-					<a href="#" id="new_project_link_a"><p class="new_project_link black_text">+ add a project</p></a>
+					<li id="new_project_a_li">
+						<a href="#" id="new_project_a" class="new_a black_text">+ add a project</a>
+					</li>
 					<li>
 						<a href="#" class="proj_display_a"><img src="images/full_circle_c1.png" alt="project is shown" class="proj_display hidden" height="10" width="10"></a>
 						<a href="#" class="nav_a">film project a</a>
@@ -73,8 +83,17 @@
 							<input type="text" id="new_proj_input">
 						</form>
 					</li>
+					
+					<li id="stock_empty_project_li">
+						<a href="#" class="proj_display_a"><img src="images/full_circle_c1.png" alt="project is shown" class="proj_display hidden invisible" height="10" width="10"></a>
+						<a href="#" class="nav_a empty_project"></a>
+					</li>
+					
+					
 				</ul>
 			</div>
+			
+			
 		</div>
 	</div>
 </body>

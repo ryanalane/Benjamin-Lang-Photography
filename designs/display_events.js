@@ -2,14 +2,14 @@
   $(function() {
     var hide_proj_display, show_proj_display, side_nav_lis, toggle_proj_display;
     show_proj_display = function(li) {
-      var proj_delete;
-      proj_delete = $(li).find('img.proj_display');
-      return proj_delete.removeClass('hidden');
+      var proj_display;
+      proj_display = $(li).find('img.proj_display');
+      return proj_display.removeClass('hidden');
     };
     hide_proj_display = function(li) {
-      var proj_delete;
-      proj_delete = $(li).find('img.proj_display');
-      return proj_delete.addClass('hidden');
+      var proj_display;
+      proj_display = $(li).find('img.proj_display');
+      return proj_display.addClass('hidden');
     };
     toggle_proj_display = function(proj_display) {
       var a, img, li;
