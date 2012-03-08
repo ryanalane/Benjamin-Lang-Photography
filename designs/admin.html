@@ -11,6 +11,7 @@
 <script type="text/javascript" src="general_dom.js"></script>
 <script type="text/javascript" src="pre_load_admin_imgs.js"></script>
 <script type="text/javascript" src="add_project.js"></script>
+<script type="text/javascript" src="add_project_type.js"></script>
 <script type="text/javascript" src="display_events.js"></script>
 </head>
 <body>
@@ -29,12 +30,17 @@
 				<li>
 					<a href="#" class="nav_a">digital</a>
 				</li>
-				<li>
-					<a href="#" class="nav_a">blog</a>
+				
+				<li id="new_proj_type_li" class="hidden">
+					<form method="post" id="new_proj_type_form">
+							<input type="text" id="new_proj_type_input">
+						</form>
 				</li>
-				<li>
-					<a href="#" class="nav_a">about</a>
+				
+				<li id="stock_empty_project_type_li" class="invisible">
+					<a href="#" class="nav_a"></a>
 				</li>
+				
 			</ul>
 		</div>
 		
@@ -84,7 +90,7 @@
 						</form>
 					</li>
 					
-					<li id="stock_empty_project_li">
+					<li id="stock_empty_project_li" class="invisible">
 						<a href="#" class="proj_display_a"><img src="images/full_circle_c1.png" alt="project is shown" class="proj_display hidden invisible" height="10" width="10"></a>
 						<a href="#" class="nav_a empty_project"></a>
 					</li>
