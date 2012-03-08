@@ -3,7 +3,12 @@
 .empty_project {
 	color: #95AB63;
 }
+.new_a {
+	border: 1px solid #95AB63;
+	background: #E2F0D6;
+}
 .new_a:hover {
+	border: 1px solid #10222B;
 	background: #95AB63;
 }
 

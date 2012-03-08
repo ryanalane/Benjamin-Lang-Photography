@@ -5,7 +5,7 @@ $ ->
 	place_cursor_in_new_project_field = ->
 		new_proj_input.focus()
 	
-	$('#new_project_a').click ->
+	$('#add_project_a').click ->
 		window.show new_proj_li 
 		place_cursor_in_new_project_field()
 		

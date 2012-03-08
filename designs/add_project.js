@@ -6,7 +6,7 @@
     place_cursor_in_new_project_field = function() {
       return new_proj_input.focus();
     };
-    $('#new_project_a').click(function() {
+    $('#add_project_a').click(function() {
       window.show(new_proj_li);
       return place_cursor_in_new_project_field();
     });

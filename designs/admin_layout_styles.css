@@ -4,15 +4,19 @@
 	font-size: 0.93em;
 }
 
-#new_project_a_li {
+#add_project_li {
 	margin: 0 0 0.5em 0;
 }
 
-#new_project_a {
+#add_project_a {
 	padding: 0.25em;
 }
 
-#new_project_type_a {
+#add_project_type_li {
+	margin: 0 0 0.25em 0;
+}
+
+#add_project_type_a {
 	margin: -0.75em 0 1em 0;
 	padding: 0.25em;
 }
